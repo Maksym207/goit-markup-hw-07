@@ -267,6 +267,7 @@ body {
   margin-bottom: 72px;
   justify-content: center;
 }
+/*********************Modal btn********************* */
 .modal-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -382,7 +383,7 @@ body {
 
 .quaisty-soc-icon {
 }
-/*-----------------------PAGE----------------------*/
+/*-----------------------What are we doing----------------------*/
 .page1 {
   font-weight: 700;
   font-size: 36px;
@@ -444,6 +445,7 @@ body {
 }
 .page-photo {
 }
+/* ---------------Our Team ----------------------- */
 .photo {
   background-color: var(--l-gray);
   padding-top: 120px;
@@ -514,26 +516,11 @@ body {
   color: var(--blu);
   margin-bottom: 16px;
 }
-.portfolio-logo-footer {
-  display: flex;
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  color: var(--blu);
-}
 
-.portfolio-logo-footer-studio {
-  color: var(--l-gray);
-}
 .logo-footer-studio {
   color: var(--l-gray);
 }
-.footer-text,
-.portfolio-footer-text {
+.footer-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -545,13 +532,7 @@ body {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.footer-portfolio {
-  background-color: var(--main-color);
-  padding: 100px 0;
-  justify-content: space-between;
-  display: flex;
-  padding-right: 120px;
-}
+
 .footer-container {
   display: flex;
   align-items: center;
@@ -695,6 +676,8 @@ body {
 .footer-soc-link:focus {
   background-color: #31d0aa;
 }
+
+/* ---------------------Modal footer------------------------------ */
 
 .backdrop {
   position: fixed;
