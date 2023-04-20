@@ -1,1 +1,155 @@
+:root {
+  --main-title-color: #ffffff;
+  --main-color: #2e2f42;
+  --main-gray: #434455;
+  --blu: #4d5ae5;
+  --d-blu: #404bbf;
+  --l-gray: #f4f4fd;
+  --ll-gray: #e7e9fc;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  position: relative;
+}
+
+.container {
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+  .first-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    margin: auto;
+    width: 320px;
+    min-height: 80px;
+    margin-bottom: 72px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .page-header-conteiner {
+    display: flex;
+    align-items: center;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .header-item:not(:last-child),
+  .header-item-address:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header-address-link,
+  .header-portfolio-link,
+  .address {
+    margin-left: auto;
+  }
+  .header-item {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+  }
+
+  .header-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    transition: color 250ms linear;
+  }
+  .header-address-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    transition: color 250ms linear;
+  }
+  .header-address-link:hover,
+  .header-address-link:focus {
+    color: var(--d-blu);
+  }
+  .header-link:focus,
+  .header-link:hover {
+    color: var(--d-blu);
+  }
+    .first-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+    margin: auto;
+    width: 496px;
+    min-height: 120px;
+    margin-bottom: 36px;
+}
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+   .first-title {
+    margin-bottom: 48px;
+}
+}

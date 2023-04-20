@@ -50,14 +50,19 @@ body {
   width: 1128px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 15px;
-  padding-right: 15px; */
 }
 /*-----------------------HEDER----------------------*/
+.header-mobile {
+  display: none;
+}
+.address {
+  display: none;
+}
 .page-header-conteiner {
   display: flex;
   align-items: center;
 }
+
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -67,19 +72,6 @@ body {
 .header-portfolio-nav {
   display: flex;
   align-items: center;
-}
-.menu {
-  display: flex;
-  align-items: center;
-}
-.header-item:not(:last-child),
-.header-item-address:not(:last-child) {
-  margin-right: 40px;
-}
-.header-address-link,
-.header-portfolio-link,
-.address {
-  margin-left: auto;
 }
 
 .logo {
@@ -110,15 +102,6 @@ body {
   color: var(--main-color);
 }
 
-.header-address-link:hover,
-.header-address-link:focus {
-  color: var(--d-blu);
-}
-.header-link:focus,
-.header-link:hover {
-  color: var(--d-blu);
-}
-
 .header-portfolio-link-first:hover,
 .header-portfolio-link-first:focus {
   color: var(--d-blu);
@@ -126,37 +109,6 @@ body {
 .header-portfolio-link:hover,
 .header-portfolio-link:focus {
   color: var(--d-blu);
-}
-
-.header-address-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-  transition: color 250ms linear;
-}
-.header-item {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-}
-
-.header-link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-  transition: color 250ms linear;
 }
 
 .current {
@@ -306,18 +258,6 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.first-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
-  margin: auto;
-  width: 496px;
-  min-height: 120px;
-  margin-bottom: 48px;
-}
 .first {
   padding: 188px 0;
   height: 600px;
@@ -333,7 +273,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-
 /*-----------------------QUAISTY----------------------*/
 .quaisty {
   padding-top: 120px;

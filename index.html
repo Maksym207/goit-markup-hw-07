@@ -20,6 +20,7 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <!----------------------------------- Header ---------------------------------->
   <body>
@@ -29,17 +30,23 @@
           <a href="./index.html" class="logo header-logo link"
             >Web<span class="header-logo-color">Studio</span>
           </a>
-          <ul class="menu header-list list">
-            <li class="header-item">
-              <a class="header-link link current" href="./index.html">Studio</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Contacts</a>
-            </li>
-          </ul>
+          <div class="header-mobile">
+            <ul class="menu header-list list">
+              <li class="header-item">
+                <a class="header-link link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="header-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div class="address">
           <address class="header-address">
@@ -63,8 +70,8 @@
     </header>
     <main>
       <!-------------------------- Section 1--------------------------------- -->
-      <section class="first">
-        <div>
+      <section>
+        <div class="first">
           <h1 class="first-title">Effective Solutions for Your Business</h1>
           <button data-modal-open type="button" class="first-btn">
             Order Service
