@@ -52,12 +52,12 @@ body {
   margin-right: auto;
 }
 /*-----------------------HEDER----------------------*/
-.header-mobile {
+/* .header-mobile {
   display: none;
 }
 .address {
   display: none;
-}
+} */
 .page-header-conteiner {
   display: flex;
   align-items: center;
@@ -155,6 +155,9 @@ body {
   font-weight: 400;
   transition: color 250ms linear;
 }
+/* .header-item {
+  display: none;
+} */
 .servis-link {
   display: inline-block;
 }
@@ -173,6 +176,44 @@ body {
   line-height: 1.5;
   color: var(--main-gray);
   letter-spacing: 0.02em;
+}
+.mobile-menu-button {
+  display: flex;
+  margin-left: auto;
+  background-color: transparent;
+  border: transparent;
+}
+
+.mobile-menu-icon {
+  stroke: #2e2f42;
+}
+.mobile-menu-button {
+}
+.mobile-menu-icon {
+}
+.mob-menu {
+}
+.mob-menu-close {
+}
+.menu {
+}
+.mob-list {
+}
+.list {
+}
+.mob-item {
+}
+.mob-link {
+}
+.link {
+}
+.current {
+}
+.mob-address-list {
+}
+.mob-item-address {
+}
+.mob-address-link {
 }
 /*-----------------------FIRST SECTION----------------------*/
 .first-btn {
@@ -259,8 +300,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .first {
-  padding: 188px 0;
-  height: 600px;
+  padding: 112px 54px;
   max-width: 1440px;
   margin: 0 auto;
   background-color: #2e2f42;
