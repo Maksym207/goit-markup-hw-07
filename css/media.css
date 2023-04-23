@@ -51,9 +51,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 320px) {
   .container {
-    width: 428px;
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
   }
   .first-title {
     font-weight: 700;
@@ -63,15 +68,26 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-title-color);
     margin: auto;
-    width: 320px;
+    width: auto;
     min-height: 80px;
     margin-bottom: 72px;
+  }
+  .mob-phone-link {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 428px) {
+  .mob-phone-link {
+    font-size: 36px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+  }
+  .mob-menu {
+    display: none;
   }
   .first-title {
     font-size: 56px;
@@ -116,12 +132,8 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-color);
   }
- 
 
   .header-link {
-    transition: color 250ms linear;
-  }
-  .header-address-link {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -131,15 +143,39 @@ body {
     color: var(--main-color);
     transition: color 250ms linear;
   }
-  .header-address-link:hover,
-  .header-address-link:focus {
-    color: var(--d-blu);
-  }
   .header-link:focus,
   .header-link:hover {
     color: var(--d-blu);
   }
+  .header-address-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms linear;
+  }
+  .header-address-link:hover,
+  .header-address-link:focus {
+    color: var(--d-blu);
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .header-mobile {
     display: none;
@@ -147,11 +183,15 @@ body {
   .address {
     display: none;
   }
-@media screen and (min-width: 1158px) {
+}
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
   .first-title {
     margin-bottom: 48px;
+  }
+  .mob-menu {
+    display: none;
   }
 }

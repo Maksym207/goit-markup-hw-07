@@ -48,42 +48,75 @@
             </ul>
           </div>
         </nav>
-        <button type="button" class="mobile-menu-button">
+        <button type="button" data-menu-open class="mobile-menu-button">
           <svg class="mobile-menu-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-mobile-menu"></use>
           </svg>
         </button>
-        <div class="mob-menu">
-          <button type="button" class="mob-menu-close">
-            <svg width="8" height="8">
-              <use href="./images/page.svg#icon-Vector"></use>
-            </svg>
-          </button>
-          <nav>
-            <ul class="menu mob-list list">
-              <li class="mob-item">
-                <a class="mob-link link current" href="./index.html">Studio</a>
+        <div class="mob-menu is-hidden" data-menu>
+          <div>
+            <button type="button" data-menu-close class="mob-menu-close">
+              <svg width="8" height="8">
+                <use href="./images/page.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="menu mob-list list">
+                <li class="mob-item">
+                  <a class="mob-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-item">
+                  <a class="mob-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mob-item">
+                  <a class="mob-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <ul class="menu mob-address-list list">
+              <li class="mob-item-address">
+                <a class="mob-phone-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
               </li>
-              <li class="mob-item">
-                <a class="mob-link link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="mob-item">
-                <a class="mob-link link" href="">Contacts</a>
+              <li class="mob-item-address">
+                <a
+                  class="mob-address-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
             </ul>
-          </nav>
-          <ul class="menu mob-address-list list">
-            <li class="mob-item-address">
-              <a class="mob-address-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="mob-item-address">
-              <a class="mob-address-link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
+            <ul class="mob-photo-soc-list list">
+              <li class="photo-soc-item">
+                <a href="" class="photo-soc-link link">
+                  <svg class="photo-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="photo-soc-item">
+                <a href="" class="photo-soc-link link"
+                  ><svg class="photo-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="photo-soc-item">
+                <a href="" class="photo-soc-link link"
+                  ><svg class="photo-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="photo-soc-item">
+                <a href="" class="photo-soc-link link"
+                  ><svg class="photo-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="address">
           <address class="header-address">
@@ -116,7 +149,7 @@
         </div>
       </section>
       <!--------------------- Quaisty----------------- -->
-      <!-- <section class="quaisty">
+      <section class="quaisty">
         <h2 class="quaisty-title" hidden>Quaisty</h2>
         <div class="container">
           <ul class="quaisty-list list">
@@ -170,7 +203,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!------------------------- What are we doing -------------------------->
       <!-- <section class="page">
         <h2 class="page1">What are we doing</h2>
@@ -574,7 +607,9 @@
         </form>
       </div>
     </div> -->
-    <script src="./js/mode.js"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
