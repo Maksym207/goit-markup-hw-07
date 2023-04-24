@@ -58,10 +58,6 @@ body {
 .address {
   display: none;
 } */
-.page-header-conteiner {
-  display: flex;
-  align-items: center;
-}
 
 .header {
   padding: 24px 16px;
@@ -413,26 +409,11 @@ body {
 .photo-color {
   color: var(--main-title-color);
 }
-.quaisty-page-link {
-  display: none;
-}
+
 .quaisty-soc-icon {
 }
 /*-----------------------What are we doing----------------------*/
-.page1 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--main-color);
-  text-align: center;
-  margin-bottom: 72px;
-}
-.page {
-  padding-top: 120px;
-  padding-bottom: 133px;
-}
+
 .servis-item {
   flex-basis: calc((100% - 48px) / 3);
 }
@@ -469,17 +450,7 @@ body {
 }
 .pay-div:nth-child(3n) {
 }
-.page-list,
-.pay-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
-}
 
-.page-phone {
-}
-.page-photo {
-}
 /* ---------------Our Team ----------------------- */
 .photo {
   background-color: var(--l-gray);
@@ -582,6 +553,19 @@ body {
   margin-right: auto;
 }
 /*-----------------------PAGE 2----------------------*/
+.quaisty-page-link {
+  display: none;
+}
+
+.page-list {
+  display: none;
+}
+.pay-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
 .photo-soc-list {
   display: flex;
   justify-content: center;
