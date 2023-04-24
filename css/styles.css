@@ -223,6 +223,7 @@ body {
 .mob-item:not(:last-child) {
   margin-bottom: 40px;
 }
+
 .mob-link {
   font-weight: 700;
   font-size: 36px;
@@ -377,17 +378,26 @@ body {
 .quaisty-item {
   flex: 100%;
 }
-
 .quaisty-uptext {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  background-color: var(--main-title-color);
+  text-transform: capitalize;
+
+  margin-bottom: 8px;
+}
+
+/* .quaisty-uptext {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
+
+} */
 .quaisty-text {
   font-weight: 500;
   font-size: 16px;
@@ -404,10 +414,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color);
   background-color: var(--main-title-color);
-}
-
-.photo-color {
-  color: var(--main-title-color);
 }
 
 .quaisty-soc-icon {
@@ -454,9 +460,12 @@ body {
 /* ---------------Our Team ----------------------- */
 .photo {
   background-color: var(--l-gray);
-  padding-top: 120px;
-  padding-bottom: 133px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+/* .photo-color:not(:last-child) {
+  margin-bottom: 72px;
+} */
 .photo-team.color {
   font-weight: 700;
   font-size: 36px;
@@ -471,10 +480,11 @@ body {
 .photo-list {
   background-color: var(--main-title-color);
   display: flex;
+  align-items: center;
+  /* flex-direction: column; */
 
-  flex-wrap: wrap;
-
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
   background-color: var(--l-gray);
 }
 .list {
@@ -500,7 +510,6 @@ body {
 }
 .photo-color {
   background-color: var(--main-title-color);
-  flex-basis: calc((100% - 72px) / 4);
 }
 
 .photo-text {
@@ -610,20 +619,34 @@ body {
   margin-bottom: 72px;
 }
 .customers {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 96px;
+  margin-bottom: 96px;
 }
-.customers-list {
+/* .customers-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   gap: 24px;
   width: 100%;
 }
 .customers-item {
-  flex-grow: 1;
   height: 88px;
+  width: 190px;
 }
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
+
+.customers-item {
+  flex-basis: 33.33%;
+  box-sizing: border-box;
+} */
+/* .customers-item {
+  flex: calc(50% - 48px);
+} */
 .customers-link {
   width: 168px;
   height: 88px;
