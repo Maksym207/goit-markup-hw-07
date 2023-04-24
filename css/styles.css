@@ -557,10 +557,7 @@ body {
   background-color: var(--main-color);
   padding: 100px 0;
 }
-.footer-logo-container {
-  display: flex;
-  margin-right: auto;
-}
+
 /*-----------------------PAGE 2----------------------*/
 .quaisty-page-link {
   display: none;
