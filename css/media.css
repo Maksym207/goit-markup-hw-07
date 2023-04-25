@@ -83,6 +83,7 @@ body {
   .container {
     max-width: 768px;
   }
+
   .mob-menu {
     display: none;
   }
@@ -196,34 +197,25 @@ body {
     text-align: left;
   }
   .customers-list {
-    gap: 24px;
+    column-gap: 24px;
   }
   .footer-logo-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 0 108px;
   }
-
-  /* .customers-list {
+  .footer-block {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 24px;
-    width: 100%;
   }
-  .customers-item {
-    height: 88px;
-    width: 190px;
-  }
-  .customers-list {
+  .footer-form {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style-type: none;
   }
-  .customers-item {
-    flex-basis: 50%;
-    box-sizing: border-box;
-  } */
+  .footer-logo-text {
+    margin-right: 24px;
+  }
+  .subscribe-input {
+    margin-right: 24px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -246,14 +238,12 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-
-    gap: 16px;
+    column-gap: 16px;
     width: 100%;
   }
   .customers-item {
     height: 88px;
     width: 190px;
-    margin-right: 16px;
   }
   .customers-list {
     display: flex;
@@ -272,13 +262,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
+  .footer-icon {
+    margin-bottom: 72px;
+  }
+  .footer-logo-text {
+    margin-bottom: 72px;
+  }
+
   /* .customers-item:not(:nth-child(3n)) {
     margin-right: 16px;
   } */
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
@@ -364,7 +362,7 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    gap: 24px;
+    column-gap: 24px;
     width: 100%;
   }
   .customers-item {
@@ -374,9 +372,17 @@ body {
   .footer-logo-container {
     display: flex;
     margin-right: auto;
+    flex-direction: row;
+    padding: 0;
+  }
+  .subscribe {
+    margin-left: 80px;
+  }
+  .footer-logo-text {
+    margin-right: 130px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1157px) {
   .page1 {
     display: none;
   }
@@ -384,7 +390,6 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    /* gap: 24px; */
     width: 100%;
   }
   .customers-item {
@@ -392,7 +397,6 @@ body {
     width: 190px;
   }
   .customers-list {
-    display: flex;
     flex-wrap: wrap;
     padding: 0;
     list-style-type: none;
