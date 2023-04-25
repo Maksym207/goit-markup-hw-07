@@ -188,6 +188,7 @@ body {
 .mobile-menu-icon {
 }
 .mob-menu {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -352,7 +353,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .first {
-  padding: 112px 54px;
+  padding: 112px 0;
   max-width: 1440px;
   margin: 0 auto;
   background-color: #2e2f42;
@@ -360,10 +361,21 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/Dark-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .first {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-mob-2x.jpg);
+  }
 }
 /*-----------------------QUAISTY----------------------*/
 .quaisty {
