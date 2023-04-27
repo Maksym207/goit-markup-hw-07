@@ -391,32 +391,16 @@ body {
   flex: 100%;
 }
 .quaisty-uptext {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-color);
   background-color: var(--main-title-color);
   text-transform: capitalize;
-
   margin-bottom: 8px;
 }
 
-/* .quaisty-uptext {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-
-} */
-.quaisty-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
 .pay-uptext,
 .servis-uptext,
 .food-uptext {
@@ -573,9 +557,9 @@ body {
   background-color: var(--main-color);
   /* padding: 100px 0; */
 }
-.footer-block {
-  /* display: none; */
-}
+/* .footer-block {
+  justify-content: center;
+} */
 
 /*-----------------------PAGE 2----------------------*/
 .quaisty-page-link {
@@ -952,6 +936,12 @@ body {
   color: #ffffff;
   margin-bottom: 16px;
 }
+/* .footer-form {
+  justify-content: center;
+} */
+/* .subscribe {
+  justify-content: center;
+} */
 
 .subscribe-input {
   background: #2e2f42;
