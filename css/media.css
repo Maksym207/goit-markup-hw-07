@@ -346,9 +346,9 @@ body {
     display: flex;
     justify-content: center;
   }
-  .quaisty-list {
-    width: 428px;
-  }
+  /* .quaisty-list {
+    width: 100%;
+  } */
   .quaisty-uptext {
     display: flex;
     justify-content: space-around;
